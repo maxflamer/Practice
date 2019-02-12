@@ -11,7 +11,7 @@ namespace TwoSum
         static void Main(string[] args)
         {
             int[] nums = { 1, 12, 3, 5 };
-            int target = 9;
+            int target = 8;
             int i, j;
             int[] answer = new int[2];
             for (i = 0; i < nums.Length; i++)
@@ -25,7 +25,10 @@ namespace TwoSum
                     }
                 }
             }
-            Console.WriteLine(answer);
+            foreach (var item in answer)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
