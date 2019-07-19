@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackUsingLinkedList", "Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseStringUsingStack", "ReverseStringUsingStack\ReverseStringUsingStack.csproj", "{DFFACD6D-2633-4F3C-9C6A-035905CFF35C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseLinkedListUsingStack", "ReverseLinkedListUsingStack\ReverseLinkedListUsingStack.csproj", "{F667869C-AC1C-4C90-97F3-6607A6396126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DFFACD6D-2633-4F3C-9C6A-035905CFF35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFFACD6D-2633-4F3C-9C6A-035905CFF35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFFACD6D-2633-4F3C-9C6A-035905CFF35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F667869C-AC1C-4C90-97F3-6607A6396126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F667869C-AC1C-4C90-97F3-6607A6396126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F667869C-AC1C-4C90-97F3-6607A6396126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F667869C-AC1C-4C90-97F3-6607A6396126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
