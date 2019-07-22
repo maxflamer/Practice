@@ -8,32 +8,54 @@ namespace ValidParantheses
 {
     class Program
     {
+        public static char InvertedParantheses(char c)
+        {
+            char result = '\0';
+            switch (c)
+            {
+                case '}':
+                    result = '{'; break;
+
+                case ']':
+                    result = '['; break;
+
+                case ')':
+                    result = '('; break;
+
+                default:
+                    break;
+            }
+            return result;
+        }
+
         static void Main(string[] args)
         {
-            Stack<char> S = new Stack<char>();
-            Dictionary<char, char> Reverse = new Dictionary<char, char>();
-            Reverse.Add('{', '}');
-            Reverse.Add('[', ']');
-            Reverse.Add('(', ')');
-            string s = "[{()}]";
+            string s = Console.ReadLine();
+            Stack<char> stack = new Stack<char>();
+            bool isValid = true;
             char[] c = s.ToCharArray();
-            for (int i = 0; i < c.Length; i++)
+            if (c.Length == 0)
+                Console.WriteLine("Length is 0");
+
+            if (c.Length >= 1)
             {
-                if (S.Count > 0 && Reverse.ContainsValue(S.Peek()))
+                for (int i = 0; i < c.Length; i++)
                 {
-                    if (c[i] == Reverse[S.Peek()])
-                        S.Pop();
+                    if (c[i] == '(' || c[i] == '[' || c[i] == '{')
+                        stack.Push(c[i]);
+                    else if (stack.Count > 0 && stack.Peek() == InvertedParantheses(c[i]))
+                        stack.Pop();
+                    else
+                    {
+                        isValid = false;
+                        return;
+                    }
                 }
-                
-                else
-                    S.Push(c[i]);
             }
+            if (stack.Count > 0)
+                isValid = false;
 
-            if (S.Count == 0)
-                Console.WriteLine(true);
-
-            else
-                Console.WriteLine(false);
+            Console.WriteLine(isValid);
         }
     }
 }
