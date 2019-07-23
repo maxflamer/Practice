@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonPrefix", "Long
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParantheses", "ValidParantheses\ValidParantheses.csproj", "{7BB864A5-49B4-4FCD-9E19-6F1E7533F011}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedArray", "RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{04471706-04CB-4415-A15A-BFF9599A5FF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7BB864A5-49B4-4FCD-9E19-6F1E7533F011}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BB864A5-49B4-4FCD-9E19-6F1E7533F011}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BB864A5-49B4-4FCD-9E19-6F1E7533F011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
