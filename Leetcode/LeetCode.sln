@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParantheses", "ValidPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedArray", "RemoveDuplicatesFromSortedArray\RemoveDuplicatesFromSortedArray.csproj", "{04471706-04CB-4415-A15A-BFF9599A5FF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveElementFromArray", "RemoveElementFromArray\RemoveElementFromArray.csproj", "{4AF746D4-5DED-4DF1-B35E-E3C85A5F83C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04471706-04CB-4415-A15A-BFF9599A5FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF746D4-5DED-4DF1-B35E-E3C85A5F83C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF746D4-5DED-4DF1-B35E-E3C85A5F83C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF746D4-5DED-4DF1-B35E-E3C85A5F83C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF746D4-5DED-4DF1-B35E-E3C85A5F83C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
