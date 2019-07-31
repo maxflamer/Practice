@@ -62,6 +62,17 @@ namespace BinarySearchTree
             }
         }
 
+        public static bool SearchUsingRecursion(BSTNode node, int data)
+        {
+            if (node == null)
+                return false;
+            else if (node.data == data)
+                return true;
+            else if (node.data > data)
+                return SearchUsingRecursion(node.left, data);
+            else
+                return SearchUsingRecursion(node.right, data);
+        }
 
         static void Main(string[] args)
         {
@@ -75,6 +86,9 @@ namespace BinarySearchTree
             Insert(6);
             Insert(7);
             Insert(9);
+
+            bool present = SearchUsingRecursion(root, 9);
+            Console.WriteLine("Element found: " + present);
         }
     }
 }
