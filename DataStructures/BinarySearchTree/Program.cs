@@ -74,6 +74,68 @@ namespace BinarySearchTree
                 return SearchUsingRecursion(node.right, data);
         }
 
+        public static BSTNode FindMinUsingIteration(BSTNode node)
+        {
+            if (node == null)
+            {
+                Console.WriteLine("Tree empty");
+                return new BSTNode(-1);
+            }
+
+            else
+            {
+                BSTNode current = node;
+                while (current.left != null)
+                {
+                    current = current.left;
+                }
+                return current;
+            }
+        }
+
+        public static BSTNode FindMaxUsingIteration(BSTNode node)
+        {
+            if (node == null)
+            {
+                Console.WriteLine("Tree empty");
+                return new BSTNode(-1);
+            }
+            else
+            {
+                BSTNode current = node;
+                while (current.right != null)
+                {
+                    current = current.right;
+                }
+                return current;
+            }
+        }
+
+        public static BSTNode FindMinUsingRecursion(BSTNode node)
+        {
+            if (node == null)
+            {
+                Console.WriteLine("Tree empty");
+                return new BSTNode(-1);
+            }
+            else if (node.left == null)
+                return node;
+
+            return FindMinUsingRecursion(node.left);
+        }
+
+        public static BSTNode FindMaxUsingRecursion(BSTNode node)
+        {
+            if (node == null)
+            {
+                Console.WriteLine("Tree empty");
+            }
+            else if (node.right == null)
+                return node;
+
+            return FindMaxUsingRecursion(node.right);
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
@@ -89,6 +151,12 @@ namespace BinarySearchTree
 
             bool present = SearchUsingRecursion(root, 9);
             Console.WriteLine("Element found: " + present);
+
+            BSTNode minUsingIteration = FindMinUsingIteration(root);
+            BSTNode maxUsingIteration = FindMaxUsingIteration(root);
+
+            BSTNode minUsingRecursion = FindMinUsingRecursion(root);
+            BSTNode maxUsingRecursion = FindMaxUsingRecursion(root);
         }
     }
 }
