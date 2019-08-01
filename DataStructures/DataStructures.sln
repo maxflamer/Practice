@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueUsingLinkedList", "Que
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{1CDE1487-920D-4DCD-A6A1-0607524CA5A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeHeight", "BinaryTreeHeight\BinaryTreeHeight.csproj", "{FBA2F8EB-F8FE-4A88-9F5E-6685F0ADE7BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{1CDE1487-920D-4DCD-A6A1-0607524CA5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CDE1487-920D-4DCD-A6A1-0607524CA5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CDE1487-920D-4DCD-A6A1-0607524CA5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA2F8EB-F8FE-4A88-9F5E-6685F0ADE7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA2F8EB-F8FE-4A88-9F5E-6685F0ADE7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA2F8EB-F8FE-4A88-9F5E-6685F0ADE7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA2F8EB-F8FE-4A88-9F5E-6685F0ADE7BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
