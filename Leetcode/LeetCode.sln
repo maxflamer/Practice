@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusOne", "PlusOne\PlusOne.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRoot", "SquareRoot\SquareRoot.csproj", "{0FF74C5D-A1AC-41E2-82BA-9A72B9469F48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedList", "RemoveDuplicatesFromSortedList\RemoveDuplicatesFromSortedList.csproj", "{1ADFA336-98D1-4D65-8DC9-30CFA0E7C1D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{0FF74C5D-A1AC-41E2-82BA-9A72B9469F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF74C5D-A1AC-41E2-82BA-9A72B9469F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF74C5D-A1AC-41E2-82BA-9A72B9469F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADFA336-98D1-4D65-8DC9-30CFA0E7C1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADFA336-98D1-4D65-8DC9-30CFA0E7C1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADFA336-98D1-4D65-8DC9-30CFA0E7C1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADFA336-98D1-4D65-8DC9-30CFA0E7C1D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
