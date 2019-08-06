@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeHeight", "BinaryT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeBreadthFirstTraversal", "BinaryTreeBreadthFirstTraversal\BinaryTreeBreadthFirstTraversal.csproj", "{947F0BBC-0D02-4E49-8155-399355CBC05C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeDepthFirstTraversal", "BinaryTreeDepthFirstTraversal\BinaryTreeDepthFirstTraversal.csproj", "{7DD4F9E0-AB24-4008-9DA6-B9F7875D5FAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{947F0BBC-0D02-4E49-8155-399355CBC05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{947F0BBC-0D02-4E49-8155-399355CBC05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{947F0BBC-0D02-4E49-8155-399355CBC05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD4F9E0-AB24-4008-9DA6-B9F7875D5FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD4F9E0-AB24-4008-9DA6-B9F7875D5FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD4F9E0-AB24-4008-9DA6-B9F7875D5FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD4F9E0-AB24-4008-9DA6-B9F7875D5FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
