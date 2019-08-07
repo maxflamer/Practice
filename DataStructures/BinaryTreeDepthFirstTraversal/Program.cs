@@ -71,6 +71,25 @@ namespace BinaryTreeDepthFirstTraversal
             PreOrderTraversal(node.right);
         }
 
+        public static void InOrderTraversal(BSTNode node)
+        {
+            if (node == null)
+                return;
+
+            InOrderTraversal(node.left);
+            Console.WriteLine(node.data);
+            InOrderTraversal(node.right);
+        }
+
+        public static void PostOrderTraversal(BSTNode node)
+        {
+            if (node == null)
+                return;
+
+            PostOrderTraversal(node.left);
+            PostOrderTraversal(node.right);
+            Console.WriteLine(node.data);
+        }
 
         static void Main(string[] args)
         {
@@ -84,8 +103,14 @@ namespace BinaryTreeDepthFirstTraversal
             Insert(6);
             Insert(7);
             Insert(9);
-            
+            Console.WriteLine("Pre-order");
             PreOrderTraversal(root);
+            Console.WriteLine();
+            Console.WriteLine("In-order");
+            InOrderTraversal(root);
+            Console.WriteLine();
+            Console.WriteLine("Post-order");
+            PostOrderTraversal(root);
         }
     }
 }
