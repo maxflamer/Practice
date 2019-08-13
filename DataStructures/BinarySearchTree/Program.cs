@@ -62,6 +62,45 @@ namespace BinarySearchTree
             }
         }
 
+
+        public static BSTNode Delete(BSTNode node, int data)
+        {
+            if (node == null)
+                return node;
+            else if (node.data > data)
+                node.left = Delete(node.left, data);
+            else if (node.data < data)
+                node.right = Delete(node.right, data);
+            else
+            {
+                //Case 1: No children
+                if (node.left == null && node.right == null)
+                    node = null;
+                //Case 2: One child
+                else if (node.left == null)
+                    node = node.right;
+                else if (node.right == null)
+                    node = node.left;
+                //Case 3: Two children
+                else
+                {
+                    BSTNode temp = FindMin(node.right);
+                    node.data = temp.data;
+                    node.right = Delete(node.right, temp.data);
+                }
+            }
+            return node;
+        }
+
+        public static BSTNode FindMin(BSTNode node)
+        {
+            while (node.left != null)
+            {
+                node = node.left;
+            }
+            return node;
+        }
+
         public static bool SearchUsingRecursion(BSTNode node, int data)
         {
             if (node == null)
@@ -148,6 +187,8 @@ namespace BinarySearchTree
             Insert(6);
             Insert(7);
             Insert(9);
+
+            Delete(root, 9);
 
             bool present = SearchUsingRecursion(root, 9);
             Console.WriteLine("Element found: " + present);
