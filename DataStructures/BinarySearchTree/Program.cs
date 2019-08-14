@@ -175,6 +175,46 @@ namespace BinarySearchTree
             return FindMaxUsingRecursion(node.right);
         }
 
+
+        public static int InorderSuccessor(BSTNode node, int data)
+        {
+            BSTNode current = Search(root, data);
+            if (current == null)
+                return -1;
+            //Case 1: Node has right subtree
+            if (node.right != null)
+                return FindMin(node.right).data;
+            //Case 2: No right subtree
+            else
+            {
+                BSTNode successor = null;
+                BSTNode ancestor = root;
+                while (ancestor != current)
+                {
+                    if (current.data < ancestor.data)
+                    {
+                        successor = ancestor;
+                        ancestor = ancestor.left;
+                    }
+                    else
+                        ancestor = ancestor.right;
+                }
+                return successor.data;
+            }
+        }
+
+        public static BSTNode Search(BSTNode node, int data)
+        {
+            if (node == null)
+                return null;
+            else if (node.data == data)
+                return node;
+            else if (node.data > data)
+                return Search(node.left, data);
+            else
+                return Search(node.right, data);
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
@@ -191,7 +231,10 @@ namespace BinarySearchTree
             Delete(root, 9);
 
             bool present = SearchUsingRecursion(root, 9);
-            Console.WriteLine("Element found: " + present);
+            
+            int successor = InorderSuccessor(root, 11);
+            if (successor == -1)
+                Console.WriteLine("Element not found");
 
             BSTNode minUsingIteration = FindMinUsingIteration(root);
             BSTNode maxUsingIteration = FindMaxUsingIteration(root);
